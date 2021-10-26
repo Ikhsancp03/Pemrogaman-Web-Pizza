@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Pizza Mang Express</title>
+</head>
+<body style="padding: 20px; background-color: chocolate;">
+    <div style="margin: auto; border: 1px solid #000; width: 50%; padding: 20px; background-color: whitesmoke;">
+        <div style="margin-bottom: 20px;">
+            <h2 style="margin-bottom: 20px;">Pizza Mang Express|Fast Delivery</h2>
+            <p>Our 12' Wood-Fired Pizzas are available for delivery.<br>
+            Build your custom Pizza and We'll deliver it within an hour.</p>    
+        </div>
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <fieldset>
+        <div style="margin-bottom: 10px;">
+            <div>
+                <legend>Your Information</legend>
+                    <li><label id="name">Name: </label></li>
+                    <li><input type="text" name="customername"><br></li>
+                    <li><label id="address">Address: </label></li>
+                    <li><input type="text" name="address"><br></li>
+                    <li><label id="telephone">Telephone Number: </label></li>
+                    <li><input type="tel" name="telephone"><br></li>
+                    <li><label id="email">Email: </label></li>
+                    <li><input type="email" name="email"><br></li>
+                    <li><label id="instructions">Delivery instructions: </label></li>
+                    <textarea id="instructions" cols="50" rows="5" placeholder="No more than 400 characters long" maxlength="400"></textarea>
+            </div>
+        </div>
+        <div>
+            <div style="margin-bottom: 20px;">
+                <h4>Desain Your Dream Pizza</h4>
+                <p>Pizza Specification</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                    <p>Crust (choose one)</p>
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>(<input type="radio" name="crust">) Classic </li>
+                        <li>(<input type="radio" name="crust">) Multigrain </li>
+                        <li>(<input type="radio" name="crust">) Cheese-stuffed crust </li>
+                        <li>(<input type="radio" name="crust">) Gluten free </li>
+                    </ul>
+                    <p>Toppings (choose as many as you want) </p>
+                    <ul style="list-style: none; padding-inline-start: 20px;">
+                        <li>[<input type="checkbox" name="topping[]" checked>] Red Sauce</li>
+                        <li>[<input type="checkbox" name="topping[]" >] White Sauce</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Mozarella Cheese</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Pepperoni</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Mushrooms</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Peppers</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Anchovies</li>
+                        <li>[<input type="checkbox" name="topping[]" >] Barbeque</li>
+                    </ul>
+            </div>
+            <div style="margin-top: 10px;">
+                    <p>Number</p
+                    <label id="pizza">How many pizzas: </label>
+                    <input type="number" name="number" min="1" max="6" value="1" title="Qty" style="width: 25px;">
+            </div>
+            <div>
+                    <a style="text-decoration: none;" href="">
+                        <input type="button" name="submit" value="Done!">
+                    </a>
+                    <input type="button" value="Reset" onclick="window.location.reload()">
+            </fieldset>
+        </form>
+            </div>
+        </div>
+</body>
+</html> 
